@@ -1,0 +1,11 @@
+node_modules/
+yarn.lock
+.yarnrc
+.yarn/
+
+.phpdoc/
+vendor/
+composer.lock
+
+docker-compose.yml
+

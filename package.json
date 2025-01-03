@@ -1,0 +1,9 @@
+{
+  "name": "tragedy-wordpress-theme",
+  "version": "0.0.0",
+  "description": "The most tragic WordPress theme",
+  "main": "PLACEHOLDER",
+  "repository": "https://github.com/aljazmc/tragedy-wordpress-theme",
+  "author": "aljazmc <mlinaric.aljaz@gmail.com>",
+  "license": "GPL-2.0-or-later"
+}
