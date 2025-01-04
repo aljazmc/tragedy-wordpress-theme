@@ -202,7 +202,7 @@ if [ ! -d src ]; then
 
     ## Creating directory structure
     mkdir -p {src/{assets/{ts,scss,fonts,img},parts,patterns,styles,templates},tests/{ts,php}}
-else
+
     ## Setting up node related stuff
     docker compose run node yarn init
 
@@ -219,7 +219,7 @@ else
     docker compose run composer require --dev composer spatie/phpunit-watcher
     docker compose run phpunit --generate-configuration
     cp vendor/wp-coding-standards/wpcs/phpcs.xml.dist.sample phpcs.xml
-
+else
     docker compose run composer install
     docker compose run node yarn install
 fi
