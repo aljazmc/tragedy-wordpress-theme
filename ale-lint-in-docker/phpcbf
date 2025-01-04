@@ -1,0 +1,8 @@
+$!/bin/sh
+
+# ALE documentation link: https://github.com/dense-analysis/ale
+
+PHP=/usr/local/bin/php
+PHPCBF=/app/vendor/bin/phpcbf
+
+docker compose exec -T php $PHP $PHPCBF "$@"

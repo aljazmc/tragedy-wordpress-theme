@@ -56,21 +56,12 @@ services:
             NODE_ENV: development
             PATH: "/home/node/.yarn/bin:/home/node/node_modules/.bin:\$PATH"
 
-    phpcbf:
+    php:
         image: php:$PHP_VERSION-fpm-alpine
         user: $PROJECT_UID:$PROJECT_GID
         working_dir: /app
         volumes:
             - .:/app
-        entrypoint: vendor/bin/phpcbf
-
-    phpcs:
-        image: php:$PHP_VERSION-fpm-alpine
-        user: $PROJECT_UID:$PROJECT_GID
-        working_dir: /app
-        volumes:
-            - .:/app
-        entrypoint: vendor/bin/phpcs
 
     phpdoc:
         image: phpdoc/phpdoc
